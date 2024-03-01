@@ -1,0 +1,28 @@
+<!-- agregar.html -->
+
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6 form-container">
+                <div class="card p-4">
+                    <h1 class="mb-4 text-center">Agregar usuario</h1>
+                    <form method="post" action="{% url 'agregar_registro' %}" class="mb-4">
+                        {% csrf_token %}
+                        <div class="mb-3">
+                            {{ cliente_form.as_p }}
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">Agregar</button>
+                    </form>
+                    <a href="{% url 'index' %}" class="btn btn-secondary btn-block">Volver a inicio</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Include the new forms.css file -->
+    <link rel="stylesheet" href="{% static 'forms.css' %}">
+{% endblock %}

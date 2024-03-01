@@ -1,0 +1,24 @@
+<!-- editar_cliente.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h1 class="mb-4 text-center">Editar usuario</h1>
+                    <form method="post" action="{% url 'editar_cliente' cliente.id %}" class="mb-4 mx-auto">
+                        {% csrf_token %}
+                        {{ form.as_p }}
+
+                        <button type="submit" class="btn btn-primary btn-block">Guardar cambios</button>
+                        <a href="{% url 'index' %}" class="btn btn-secondary btn-block">Cancelar</a>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Include any additional CSS or JS as needed -->
+{% endblock %}

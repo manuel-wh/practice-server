@@ -1,0 +1,101 @@
+/* custom-styles.css */
+
+/* custom-styles.css */
+
+@font-face {
+    font-family: 'CustomFontName';
+    /* Replace with your desired font name */
+    src: url('./fonts/Roboto/Roboto-Regular.ttf') format('truetype');
+    /* Replace with the path to your font file */
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CustomFontName';
+    /* Replace with your desired font name */
+    src: url('./fonts/Roboto/Roboto-Bold.ttf') format('truetype');
+    /* Replace with the path to your font file */
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'CustomFontName';
+    /* Replace with your desired font name */
+    src: url('./fonts/Roboto/Roboto-Italic.ttf') format('truetype');
+    /* Replace with the path to your font file */
+    font-weight: normal;
+    font-style: italic;
+}
+
+h1 {
+    font-family: 'CustomFontName', sans-serif;
+    font-weight: bold;
+}
+
+em {
+    font-family: 'CustomFontName', sans-serif;
+    font-style: italic;
+}
+
+body {
+    font-family: 'CustomFontName', sans-serif;
+    /* Use your custom font as a fallback */
+    background-color: #f3f0e8;
+    /* Light brown background */
+    color: #555;
+    /* Dark gray text color */
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.table th {
+    text-align: center;
+    background-color: #3d3028;
+    /* Dark brown background for table headers */
+    color: #fff;
+    /* White text color for table headers */
+}
+
+.table td {
+    text-align: center;
+    background-color: #d3e0dc;
+    /* Light green background for table cells */
+}
+
+.bg-custom-primary {
+    background-color: #006442;
+    /* Dark green background for primary button */
+    color: #fff;
+}
+
+.bg-custom-danger {
+    background-color: #8e2f28;
+    /* Dark brown background for danger button */
+    color: #fff;
+}
+
+.bg-custom-warning {
+    background-color: #ccac32;
+    /* Olive color for warning button */
+    color: #333;
+}
+
+.btn-custom-primary {
+    background-color: #006442;
+    /* Dark green button */
+    color: #fff;
+}
+
+.btn-custom-danger {
+    background-color: #8e2f28;
+    /* Dark brown button */
+    color: #fff;
+}
+
+.btn-custom-warning {
+    background-color: #ccac32;
+    /* Olive color button */
+    color: #333;
+}
